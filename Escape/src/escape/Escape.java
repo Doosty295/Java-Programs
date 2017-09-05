@@ -4,7 +4,7 @@ Compiled with NetBeansIDE 8.2
 Written by Dustin LeGars
 GitHub Repository: https://github.com/Doosty295/Java-Programs
 Java Programming Period 3
-Started on 09/05/2017 10:11
+Started on 09/05/2017 10:12
 */
 package escape;
 
