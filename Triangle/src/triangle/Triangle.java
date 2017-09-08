@@ -33,7 +33,7 @@ public class Triangle {
 //Outputs
 
     //Lengths
-    System.out.println("The length of the triangle\'s sides are " + base + ", " + height + "and, " + hyp + ".");
+    System.out.println("The length of the triangle\'s sides are " + base + ", " + height + " and, " + hyp + ".");
 
     //Perimeter
     System.out.println("The perimeter of the triangle is " + perim + ".");
