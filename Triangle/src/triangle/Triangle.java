@@ -5,6 +5,7 @@ Compiled with NetBeans IDE 8.2
 Java Program 4 : Java Programming Period 3
 09/08/2017 - 09:50
 Dustin LeGars - 9djl001
+https://github.com/Doosty295/Java-Programs/blob/master/Triangle/src/triangle/Triangle.java
 */
 package triangle;
 
