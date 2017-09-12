@@ -5,7 +5,7 @@ Written by Dustin LeGars
 GitHub Repository: https://github.com/Doosty295/Java-Programs
 Java Programming Period 3
 Started on 09/05/2017 15:58
-Learning to use Unicode and Escape sequences
+Learning to use Unicode and Escape sequences 
 */
 package program1;
 
