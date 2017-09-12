@@ -2,7 +2,7 @@
   Compiled in NetBeansIDE 8.2
   Written By LeGars, Dustin
   Link to GitHub (https://github.com/Doosty295/Java-Programs)
-  Java Program 2
+  Java Program 2 
  */
 package initiald;
 
