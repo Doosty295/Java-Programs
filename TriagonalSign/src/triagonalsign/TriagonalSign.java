@@ -101,6 +101,14 @@ public class TriagonalSign {
     //Termination
       case 'F':
         System.end(0)
+      break;
+
+    //Default
+    case default:
+      System.out.println("Please select an option to continue.");
+      break;
+
+
     }
 
 
