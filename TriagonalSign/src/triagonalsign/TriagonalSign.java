@@ -8,7 +8,7 @@ Java Program 4 v.2
  */
 package triagonalsign;
 
-import java.util.Scanner, java.util.Math;
+import java.util.Scanner;
 /**
  *
  * @author 9djl001
@@ -38,23 +38,23 @@ public class TriagonalSign {
     public static void main(String[] args) {
 
 //Operation query
-  System.out.println("What form of decimal based right triangle operation would you like to perform?
-  \nTo caclulate for base, press \'A\'.
-  \nTo calculate for height, press \'B\'.
-  \nTo calculate for hypotenuse, press \'C\'.
-  \nTo calculate for area, press \'D\'.
-  \nTo calculate for perimeter, press \'E\'.
+  System.out.println("What form of decimal based right triangle operation would you like to perform?");
+   System.out.println("To caclulate for base, press 0.");
+   System.out.println("To calculate for height, press 1.");
+   System.out.println("To calculate for hypotenuse, press 2.");
+   System.out.println("To calculate for area, press 3.");
+   System.out.println("To calculate for perimeter, press 4.");
+   System.out.println("To terminate this program, press 5.");
 
-  \n\nTo terminate this program, press \'F\'.");
-
-  queryInput = input.nextChar();
+   int ask;
+        ask = input.nextInt();
 
 
 
   //Switch
-    switch (queryInput) {
+    switch (ask) {
     //Base
-      case 'A': System.out.println("What is the height?");
+      case 0: System.out.println("What is the height?");
         inputHeight = input.nextDouble();
         System.out.println("What is the hypotenuse?");
         inputHyp = input.nextDouble();
@@ -62,7 +62,7 @@ public class TriagonalSign {
         break;
 
     //Height
-      case 'B': System.out.println("What is the base?");
+      case 1: System.out.println("What is the base?");
       inputBase = input.nextDouble();
       System.out.println("What is the hypotenuse?");
       inputHyp = input.nextDouble();
@@ -70,7 +70,7 @@ public class TriagonalSign {
       break;
 
     //Hypotenuse
-      case 'C': System.out.println("What is the height?");
+      case 2: System.out.println("What is the height?");
       inputHeight = input.nextDouble();
       System.out.println("What is the base?");
       inputBase = input.nextDouble();
@@ -79,7 +79,7 @@ public class TriagonalSign {
 
 
     //Area
-      case 'D': System.out.println("What is the height?");
+      case 3: System.out.println("What is the height?");
       inputHeight = input.nextDouble();
       System.out.println("What is the base?");
       inputBase = input.nextDouble();
@@ -89,7 +89,7 @@ public class TriagonalSign {
 
 
     //Perimeter
-      case 'E': System.out.println("What is the height?");
+      case 4: System.out.println("What is the height?");
       inputHeight = input.nextDouble();
       System.out.println("What is the base?");
       inputBase = input.nextDouble();
@@ -99,12 +99,12 @@ public class TriagonalSign {
       break;
 
     //Termination
-      case 'F':
-        System.end(0)
+      case 5:
+        System.end(0);
       break;
 
     //Default
-    case default:
+    default :
       System.out.println("Please select an option to continue.");
       break;
 
