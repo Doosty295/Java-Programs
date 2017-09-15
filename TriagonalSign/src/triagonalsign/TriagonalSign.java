@@ -8,7 +8,7 @@ Java Program 4 v.2
  */
 package triagonalsign;
 
-import java.util.Scanner;
+import java.util.Scanner, java.util.Math;
 /**
  *
  * @author 9djl001
@@ -19,12 +19,34 @@ public class TriagonalSign {
     char queryInput;
     Scanner inputBase, inputHeight, inputHyp, operationSelector = new Scanner(System.in);
 
+//Arithmetic
+  //Base from Height and hyp
+    base = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputHeight, 2)));
 
+  //Height from Base and hyp
+    height = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputBase, 2)));
+
+  //Hyp from Base and Height
+    hyp = Math.sqrt((Math.pow(inputBase, 2)) + (Math.pow(inputHeight, 2)));
+
+  //Area from Height and base
+    area = ((base / 2) * height);
+
+  //Perimeter from Base, Height, and Hypotenuse
+    perim = (base + height + hyp);
 
     public static void main(String[] args) {
 
 //Operation query
-  System.out.println("What form of operation would you like to perform? \nTo caclulate for base, press \'A\'. \nTo calculate for height, press \'B\'. \nTo calculate for hypotenuse, press \'C\'. \nTo calculate for area, press \'D\'. \nTo calculate for perimeter, press \'E\'. \n\nTo terminate this program, press \'F\'.");
+  System.out.println("What form of decimal based right triangle operation would you like to perform?
+  \nTo caclulate for base, press \'A\'.
+  \nTo calculate for height, press \'B\'.
+  \nTo calculate for hypotenuse, press \'C\'.
+  \nTo calculate for area, press \'D\'.
+  \nTo calculate for perimeter, press \'E\'.
+
+  \n\nTo terminate this program, press \'F\'.");
+
   queryInput = input.nextChar();
 
 
@@ -34,24 +56,51 @@ public class TriagonalSign {
     //Base
       case 'A': System.out.println("What is the height?");
         inputHeight = input.nextDouble();
-        System.out.println("What is the Hypotenuse?");
+        System.out.println("What is the hypotenuse?");
         inputHyp = input.nextDouble();
-        
+        System.out.println("The length of the triangle's base is " + base);
+        break;
+
     //Height
-      case 'B':
+      case 'B': System.out.println("What is the base?");
+      inputBase = input.nextDouble();
+      System.out.println("What is the hypotenuse?");
+      inputHyp = input.nextDouble();
+      System.out.println("The height of the triangle is " + height);
+      break;
 
     //Hypotenuse
-      case 'C':
+      case 'C': System.out.println("What is the height?");
+      inputHeight = input.nextDouble();
+      System.out.println("What is the base?");
+      inputBase = input.nextDouble();
+      System.out.println("The length of the triangle's hypotenuse is " + hyp);
+      break;
+
 
     //Area
-      case 'D':
+      case 'D': System.out.println("What is the height?");
+      inputHeight = input.nextDouble();
+      System.out.println("What is the base?");
+      inputBase = input.nextDouble();
+      System.out.println("The area of the triangle is " + area);
+      break;
+
+
 
     //Perimeter
-      case 'E':
+      case 'E': System.out.println("What is the height?");
+      inputHeight = input.nextDouble();
+      System.out.println("What is the base?");
+      inputBase = input.nextDouble();
+      System.out.println("What is the hypotenuse?");
+      inputHyp = input.nextDouble();
+      System.out.println("The perimeter of the triangle is " + perim);
+      break;
 
     //Termination
       case 'F':
-
+        System.end(0)
     }
 
 
