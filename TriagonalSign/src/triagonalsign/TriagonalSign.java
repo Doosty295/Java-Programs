@@ -14,26 +14,27 @@ import java.util.Scanner;
  * @author 9djl001
  */
 public class TriagonalSign {
-  //Declarations
-    double base, height, hyp, area, perim;
-    char queryInput;
-    Scanner inputBase, inputHeight, inputHyp, operationSelector = new Scanner(System.in);
+
+//Declarations
+double base, height, hyp, area, perim, inputHyp, inputHeight, inputBase;
+
+
 
 //Arithmetic
   //Base from Height and hyp
-     base = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputHeight, 2)));
+     double base = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputHeight, 2)));
 
   //Height from Base and hyp
-     height = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputBase, 2)));
+     double height = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputBase, 2)));
 
   //Hyp from Base and Height
-     hyp = Math.sqrt((Math.pow(inputBase, 2)) + (Math.pow(inputHeight, 2)));
+     double hyp = Math.sqrt((Math.pow(inputBase, 2)) + (Math.pow(inputHeight, 2)));
 
   //Area from Height and base
-     area = ((base / 2) * height);
+     double area = ((base / 2) * height);
 
   //Perimeter from Base, Height, and Hypotenuse
-     perim = (base + height + hyp);
+     double perim = (base + height + hyp);
 
     public static void main(String[] args) {
 
@@ -46,8 +47,10 @@ public class TriagonalSign {
    System.out.println("To calculate for perimeter, press 4.");
    System.out.println("To terminate this program, press 5.");
 
+   Scanner choice = new Scanner(System.in);
+
    int ask;
-        ask = input.nextInt();
+        ask = choice.nextInt();
 
 
 
@@ -55,34 +58,34 @@ public class TriagonalSign {
     switch (ask) {
     //Base
       case 0: System.out.println("What is the height?");
-        inputHeight = input.nextDouble();
+        inputHeight = choice.nextDouble();
         System.out.println("What is the hypotenuse?");
-        inputHyp = input.nextDouble();
+        inputHyp = choice.nextDouble();
         System.out.println("The length of the triangle's base is " + base);
         break;
 
     //Height
       case 1: System.out.println("What is the base?");
-      inputBase = input.nextDouble();
+      inputBase = choice.nextDouble();
       System.out.println("What is the hypotenuse?");
-      inputHyp = input.nextDouble();
+      inputHyp = choice.nextDouble();
       System.out.println("The height of the triangle is " + height);
       break;
 
     //Hypotenuse
       case 2: System.out.println("What is the height?");
-      inputHeight = input.nextDouble();
+      inputHeight = choice.nextDouble();
       System.out.println("What is the base?");
-      inputBase = input.nextDouble();
+      inputBase = choice.nextDouble();
       System.out.println("The length of the triangle's hypotenuse is " + hyp);
       break;
 
 
     //Area
       case 3: System.out.println("What is the height?");
-      inputHeight = input.nextDouble();
+      inputHeight = choice.nextDouble();
       System.out.println("What is the base?");
-      inputBase = input.nextDouble();
+      inputBase = choice.nextDouble();
       System.out.println("The area of the triangle is " + area);
       break;
 
@@ -90,11 +93,11 @@ public class TriagonalSign {
 
     //Perimeter
       case 4: System.out.println("What is the height?");
-      inputHeight = input.nextDouble();
+      inputHeight = choice.nextDouble();
       System.out.println("What is the base?");
-      inputBase = input.nextDouble();
+      inputBase = choice.nextDouble();
       System.out.println("What is the hypotenuse?");
-      inputHyp = input.nextDouble();
+      inputHyp = choice.nextDouble();
       System.out.println("The perimeter of the triangle is " + perim);
       break;
 
