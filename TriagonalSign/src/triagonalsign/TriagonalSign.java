@@ -15,28 +15,34 @@ import java.util.Scanner;
  */
 public class TriagonalSign {
 
-//Declarations
-double base, height, hyp, area, perim, inputHyp, inputHeight, inputBase;
+//Declarations were here, but error
+
+
+    public static void main(String[] args) {
+
+        //Declarations again
+        double base, height, hyp, area, perim;
+        double inputHyp = 0;
+        double inputHeight = 0;
+        double inputBase = 0;
 
 
 
 //Arithmetic
   //Base from Height and hyp
-     double base = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputHeight, 2)));
+     base = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputHeight, 2)));
 
   //Height from Base and hyp
-     double height = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputBase, 2)));
+     height = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputBase, 2)));
 
   //Hyp from Base and Height
-     double hyp = Math.sqrt((Math.pow(inputBase, 2)) + (Math.pow(inputHeight, 2)));
+     hyp = Math.sqrt((Math.pow(inputBase, 2)) + (Math.pow(inputHeight, 2)));
 
   //Area from Height and base
-     double area = ((base / 2) * height);
+     area = ((base / 2) * height);
 
   //Perimeter from Base, Height, and Hypotenuse
-     double perim = (base + height + hyp);
-
-    public static void main(String[] args) {
+     perim = (base + height + hyp);
 
 //Operation query
   System.out.println("What form of decimal based right triangle operation would you like to perform?");
@@ -66,26 +72,26 @@ double base, height, hyp, area, perim, inputHyp, inputHeight, inputBase;
 
     //Height
       case 1: System.out.println("What is the base?");
-      inputBase = choice.nextDouble();
+        inputBase = choice.nextDouble();
       System.out.println("What is the hypotenuse?");
-      inputHyp = choice.nextDouble();
+        inputHyp = choice.nextDouble();
       System.out.println("The height of the triangle is " + height);
       break;
 
     //Hypotenuse
       case 2: System.out.println("What is the height?");
-      inputHeight = choice.nextDouble();
+        inputHeight = choice.nextDouble();
       System.out.println("What is the base?");
-      inputBase = choice.nextDouble();
+        inputBase = choice.nextDouble();
       System.out.println("The length of the triangle's hypotenuse is " + hyp);
       break;
 
 
     //Area
       case 3: System.out.println("What is the height?");
-      inputHeight = choice.nextDouble();
+        inputHeight = choice.nextDouble();
       System.out.println("What is the base?");
-      inputBase = choice.nextDouble();
+        inputBase = choice.nextDouble();
       System.out.println("The area of the triangle is " + area);
       break;
 
@@ -93,11 +99,11 @@ double base, height, hyp, area, perim, inputHyp, inputHeight, inputBase;
 
     //Perimeter
       case 4: System.out.println("What is the height?");
-      inputHeight = choice.nextDouble();
+        inputHeight = choice.nextDouble();
       System.out.println("What is the base?");
-      inputBase = choice.nextDouble();
+        inputBase = choice.nextDouble();
       System.out.println("What is the hypotenuse?");
-      inputHyp = choice.nextDouble();
+        inputHyp = choice.nextDouble();
       System.out.println("The perimeter of the triangle is " + perim);
       break;
 
@@ -108,7 +114,7 @@ double base, height, hyp, area, perim, inputHyp, inputHeight, inputBase;
 
     //Default
     default :
-      System.out.println("Please select an option to continue.");
+      System.out.println("Your selection was recognized as invalid. Please restart the program and enter a value between 0 and 5.");
       break;
 
 
