@@ -5,7 +5,7 @@ Written By Dustin LeGars
 Written on 9/18/2017 @ 10:00
 Recitation Assignment: User Input and String Methods
 Java Programming Period 3
-Java Program 6
+Java Program 7
  */
 package inputstringandstuff;
   import java.util.Scanner;
