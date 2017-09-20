@@ -2,7 +2,7 @@
  Remake of program Triangle with Inputs
  Written in Atom
  Compiled in NetBeans IDE 8.2
-Written by Dustin LeGars on 9/14/2017
+Written by Dustin LeGars on 9/20/2017
 Java Programming Period 3
 Java Program 4 v.2
  */
@@ -15,114 +15,164 @@ import java.util.Scanner;
  */
 public class TriagonalSign {
 
-//Declarations were here, but error
+
 
 
     public static void main(String[] args) {
 
-        //Declarations again
-        double base, height, hyp, area, perim;
-        double inputHyp = 0;
-        double inputHeight = 0;
-        double inputBase = 0;
+      //Declaration of variables
+      int repeat = 1;         //For the while loop
+      int select = 0;
 
 
 
-//Arithmetic
-  //Base from Height and hyp
-     base = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputHeight, 2)));
+      //Scanner
+        Scanner val = new Scanner(System.in);
 
-  //Height from Base and hyp
-     height = Math.sqrt((Math.pow(inputHyp, 2)) + (Math.pow(inputBase, 2)));
+        while (repeat == 1) {
 
-  //Hyp from Base and Height
-     hyp = Math.sqrt((Math.pow(inputBase, 2)) + (Math.pow(inputHeight, 2)));
+          //Switch Statement
+            System.out.println("What decimal based right triangle calculation would you like run?");
+            System.out.println("1). Solve for base from height and hypotenuse lengths.");
+            System.out.println("2). Solve for height from base and hypotenuse lengths. ");
+            System.out.println("3). Solve for hypotenuse from height and base lengths.");
+            System.out.println("4). Solve for area using \u00BD of the base times the height.");
+            System.out.println("5). Solve for perimeter by adding all three sides together." );
+            System.out.println("6). End the program.");
+            System.out.println("Please select one: ");
 
-  //Area from Height and base
-     area = ((base / 2) * height);
-
-  //Perimeter from Base, Height, and Hypotenuse
-     perim = (base + height + hyp);
-
-//Operation query
-  System.out.println("What form of decimal based right triangle operation would you like to perform?");
-   System.out.println("To caclulate for base, press 0.");
-   System.out.println("To calculate for height, press 1.");
-   System.out.println("To calculate for hypotenuse, press 2.");
-   System.out.println("To calculate for area, press 3.");
-   System.out.println("To calculate for perimeter, press 4.");
-   System.out.println("To terminate this program, press 5.");
-
-   Scanner choice = new Scanner(System.in);
-
-   int ask;
-        ask = choice.nextInt();
+            select = val.nextInt();
 
 
 
-  //Switch
-    switch (ask) {
-    //Base
-      case 0: System.out.println("What is the height?");
-        inputHeight = choice.nextDouble();
-        System.out.println("What is the hypotenuse?");
-        inputHyp = choice.nextDouble();
-        System.out.println("The length of the triangle's base is " + base);
-        break;
+            switch (select) {
 
-    //Height
-      case 1: System.out.println("What is the base?");
-        inputBase = choice.nextDouble();
-      System.out.println("What is the hypotenuse?");
-        inputHyp = choice.nextDouble();
-      System.out.println("The height of the triangle is " + height);
-      break;
+              //Base
+              case 1:
+                System.out.println("You have selected to solve for the base.");
+                System.out.println("Please input a value for the height of the triangle.");
+                double inputA = val.nextDouble();
+                System.out.println("Please input a value for the hypotenuse of the triangle.");
+                double inputB = val.nextDouble();
 
-    //Hypotenuse
-      case 2: System.out.println("What is the height?");
-        inputHeight = choice.nextDouble();
-      System.out.println("What is the base?");
-        inputBase = choice.nextDouble();
-      System.out.println("The length of the triangle's hypotenuse is " + hyp);
-      break;
+              //Declarations for1 Arithmetic
+                double aSrq = Math.pow(inputA, 2);
+                double bSqr = Math.pow(inputB, 2);
+                double cSqr = aSrq + bSqr;
+                double fin = Math.sqrt(cSqr);
 
+                System.out.println("The length of the base of your triangle is " + fin);
 
-    //Area
-      case 3: System.out.println("What is the height?");
-        inputHeight = choice.nextDouble();
-      System.out.println("What is the base?");
-        inputBase = choice.nextDouble();
-      System.out.println("The area of the triangle is " + area);
-      break;
+                System.out.println("Would you like to run another operation? (1 = Y/2 = N)");
+                repeat = val.nextInt();
+
+                //Declarations for1 Arithmetic
 
 
 
-    //Perimeter
-      case 4: System.out.println("What is the height?");
-        inputHeight = choice.nextDouble();
-      System.out.println("What is the base?");
-        inputBase = choice.nextDouble();
-      System.out.println("What is the hypotenuse?");
-        inputHyp = choice.nextDouble();
-      System.out.println("The perimeter of the triangle is " + perim);
-      break;
+                break;
 
-    //Termination
-      case 5:
-        System.end(0);
-      break;
+              //Height
+              case 2:
+                System.out.println("You have selected to solve for the height.");
+                System.out.println("Please input a value for the base of the triangle.");
+                double inputAa = val.nextDouble();
+                System.out.println("Please input a value for the hypotenuse of the triangle.");
+                double inputBa = val.nextDouble();
 
-    //Default
-    default :
-      System.out.println("Your selection was recognized as invalid. Please restart the program and enter a value between 0 and 5.");
-      break;
+              //Declarations for1 Arithmetic
+                double aSrqa = Math.pow(inputAa, 2);
+                double bSqra = Math.pow(inputBa, 2);
+                double cSqra = aSrqa + bSqra;
+                double fina = Math.sqrt(cSqra);
 
+                System.out.println("The height of your triangle is " + fina);
+
+                System.out.println("Would you like to run another operation? (1 = Y/2 = N)");
+                repeat = val.nextInt();
+
+
+
+                break;
+
+              //Hypotenuse
+              case 3:
+                System.out.println("You have selected to solve for the hypotenuse.");
+                System.out.println("Please input a value for the height of the triangle.");
+                double inputAb = val.nextDouble();
+                System.out.println("Please input a value for the base of the triangle.");
+                double inputBb = val.nextDouble();
+
+              //Declarations for1 Arithmetic
+                double aSrqb = Math.pow(inputAb, 2);
+                double bSqrb = Math.pow(inputBb, 2);
+                double cSqrb = aSrqb + bSqrb;
+                double finb = Math.sqrt(cSqrb);
+
+                System.out.println("The length of the hypotenuse of your triangle is " + finb);
+
+                System.out.println("Would you like to run another operation? (1 = Y/2 = N)");
+                repeat = val.nextInt();
+
+
+
+                break;
+
+              //Area
+              case 4:
+                System.out.println("You have selected to solve for the area.");
+                System.out.println("Please input a value for the height of the triangle.");
+                double inputAc = val.nextDouble();
+                System.out.println("Please input a value for the base of the triangle.");
+                double inputBc = val.nextDouble();
+
+              //Declarations for1 Arithmetic
+                double high = (inputBc / 2) * inputAc;
+
+                System.out.println("The area of your triangle is " + high);
+
+                System.out.println("Would you like to run another operation? (1 = Y/2 = N)");
+                repeat = val.nextInt();
+
+                break;
+
+              //Perimeter
+              case 5:
+              System.out.println("You have selected to solve for the perimeter.");
+              System.out.println("Please input a value for the height of the triangle.");
+              double inputAd = val.nextDouble();
+              System.out.println("Please input a value for the base of the triangle.");
+              double inputBd = val.nextDouble();
+              System.out.println("Please input a value for the hypotenuse of the triangle.");
+              double inputCd = val.nextDouble();
+
+              System.out.println("The perimeter of your triangle is " + (inputAd + inputBd + inputCd));
+
+              System.out.println("Would you like to run another operation? (1 = Y/2 = N)");
+              repeat = val.nextInt();
+
+              break;
+
+              case 6:
+                System.end(0);
+              break;
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+        }
 
     }
-
-
-
-
 
     }
 
