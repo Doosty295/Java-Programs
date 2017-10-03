@@ -12,7 +12,7 @@ public class Recitation2 {
      */
     public static void main(String[] args) {
         //Declarations
-        int length, space;
+        int length, space, uniVal;
         String name, extraS;
         char initial1, initial2;
 
@@ -30,12 +30,16 @@ public class Recitation2 {
         initial1 = name.charAt(0);
         initial2 = name.charAt(space + 1);
 
+        uniVal = (int)initial1 + (int)initial2;
+
+
+
 
         System.out.println("\n\n\nThank you for your name. \nYour name is " + name);
 
         System.out.println("Your initials are: " + initial1 + initial2);
 
-
+        System.out.println("The value of your initials in Unicode is:" + uniVal);
 
     }
 
