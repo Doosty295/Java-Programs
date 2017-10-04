@@ -40,7 +40,7 @@ public class Recitation2 {
 
         //Interaction
         System.out.println("Welcome to Recitation Project #1: Fun With Names. \nPlease input your name below.");
-        
+
         name = input.nextLine();
 
         space = name.indexOf(' ');
