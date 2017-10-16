@@ -46,7 +46,6 @@ public class DeciscionStructures {
           //Name
             System.out.println("Please input the name of the first runner.");
               runnerA = input.nextLine();
-              runnerA = input.nextLine();
           //Time
             System.out.println("Please input the time the first runner took.");
               timeA = input.nextDouble();
@@ -71,30 +70,30 @@ public class DeciscionStructures {
 
         //Placments
           //A first, B second, C third
-      if ((timeA < timeB && timeA < timeC) && (timeB < timeC)) {
+      if (timeA < timeB && timeA < timeC && timeB < timeC) {
         System.out.println("First place goes to " + runnerA + " with second place going to " + runnerB + " and finishing last is " + runnerC);
 
           //A first, C second, B third
-      if ((timeA < timeB && timeA < timeC) && (timeC < timeB)) {
+      if (timeA < timeB && timeA < timeC && timeC < timeB) {
         System.out.println("First place goes to " + runnerA + " with second place going to " + runnerC + " and finishing last is " + runnerB);
 
           //B first, A second, C third
-      if ((timeB < timeA && timeB < timeC) && (timeA < timeC)) {
+      if (timeB < timeA && timeB < timeC && timeA < timeC) {
         System.out.println("First place goes to " + runnerB + " with second place going to " + runnerA + " and finishing last is " + runnerC);
 
           //B first, C second, A third
-      if ((timeB < timeA && timeB < timeC) && (timeA < timeB)) {
+      if (timeB < timeA && timeB < timeC && timeA < timeB) {
         System.out.println("First place goes to " + runnerB + " with second place going to " + runnerC + " and finishing last is " + runnerA);
 
           //C first, A second, B third
-      if ((timeC < timeA && timeB < timeC) && (timeA < timeB)) {
+      if (timeC < timeA && timeB < timeC && timeA < timeB) {
         System.out.println("First place goes to " + runnerC + " with second place going to " + runnerA + " and finishing last is " + runnerB);
 
           //C first, B second, A third
-      if ((timeC < timeA && timeB < timeC) && (timeA < timeB)) {
+      if (timeC < timeA && timeB < timeC && timeA < timeB) {
         System.out.println("First place goes to " + runnerC + " with second place going to " + runnerB + " and finishing last is " + runnerA);
 
-      
+
 
 
 
