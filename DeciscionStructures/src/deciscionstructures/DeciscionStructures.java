@@ -11,7 +11,7 @@ Written on 10/5/2017 at 09:50
 ||Test ability to make deciscions||
 ||based on a users input by using||
 ||deciscion structures.          ||
-||Multiple error messages        ||
+||Multiple error messages too!   ||
 |||||||||||||||||||||||||||||||||||
 */
 
