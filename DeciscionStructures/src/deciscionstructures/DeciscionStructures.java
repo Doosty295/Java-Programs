@@ -3,7 +3,7 @@ package deciscionstructures;
 Java Program 9
 Programming With Java Period 3
 CS0007 - Deciscion Structures
-Written in Atom 1.21.0 x64
+Written in Atom 1.21.1 x64
 Compiled in NetBeans IDE 8.2
 Written By Dustin LeGars
 Written on 10/5/2017 at 09:50
@@ -11,7 +11,7 @@ Written on 10/5/2017 at 09:50
 ||Test ability to make deciscions||
 ||based on a users input by using||
 ||deciscion structures.          ||
-||Also, trying to document better||
+||Multiple error messages        ||
 |||||||||||||||||||||||||||||||||||
 */
 
