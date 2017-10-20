@@ -71,45 +71,69 @@ public class DeciscionStructures {
         //Placments
           //A, B, C
           if (timeA < timeB && timeB < timeC) {
-            System.out.println("The race is over! First place goes to " + runnerA + " followed by " + runnerB + " in second, and lastly, " + runnerC + " coming in last place.");
+            System.out.println("The race is over! First place goes to " + runnerA +
+             " followed by " + runnerB + " in second, \nand lastly, " + runnerC + " coming in last place.");
           }
           //A, C, B
-          if (timeA < timeC && timeC < timeB) {
-            System.out.println("The race is over! First place goes to " + runnerA + " followed by " + runnerC + " in second, and lastly, " + runnerB + " coming in last place.");
+          else if (timeA < timeC && timeC < timeB) {
+            System.out.println("The race is over! First place goes to " + runnerA +
+             " followed by " + runnerC + " in second, \nand lastly, " + runnerB + " coming in last place.");
           }
           //B, A, C
-          if (timeB < timeA && timeA < timeC) {
-            System.out.println("The race is over! First place goes to " + runnerB + " followed by " + runnerA + " in second, and lastly, " + runnerC + " coming in last place.");
+          else if (timeB < timeA && timeA < timeC) {
+            System.out.println("The race is over! First place goes to " + runnerB +
+             " followed by " + runnerA + " in second, \nand lastly, " + runnerC + " coming in last place.");
           }
           //B, C, A
-          if (timeB < timeC && timeC < timeA) {
-            System.out.println("The race is over! First place goes to " + runnerB + " followed by " + runnerC + " in second, and lastly, " + runnerA + " coming in last place.");
+          else if (timeB < timeC && timeC < timeA) {
+            System.out.println("The race is over! First place goes to " + runnerB +
+             " followed by " + runnerC + " in second, \nand lastly, " + runnerA + " coming in last place.");
           }
           //C, A, B
-          if (timeC < timeA && timeA < timeB) {
-            System.out.println("The race is over! First place goes to " + runnerC + " followed by " + runnerA + " in second, and lastly, " + runnerB + " coming in last place.");
+          else if (timeC < timeA && timeA < timeB) {
+            System.out.println("The race is over! First place goes to " + runnerC +
+             " followed by " + runnerA + " in second, \nand lastly, " + runnerB + " coming in last place.");
           }
           //C, B, A
-          if (timeC < timeB && timeB < timeA) {
-            System.out.println("The race is over! First place goes to " + runnerC + " followed by " + runnerB + " in second, and lastly, " + runnerA + " coming in last place.");
+          else if (timeC < timeB && timeB < timeA) {
+            System.out.println("The race is over! First place goes to " + runnerC +
+             " followed by " + runnerB + " in second, \nand lastly, " + runnerA + " coming in last place.");
           }
+
+
           //Error
           else {
             double errCode = (Math.random() * 10);
-            if (errCode < 2) {
-              System.out.println("I just don't know what went wrong.");
+            if (errCode < 1) {
+              System.out.println(" These errors are popping up because there was a tie.");
+            }
+            else if (errCode < 2) {
+              System.out.println(" You broke it.");
+            }
+            else if (errCode < 3) {
+              System.out.println(" There was a problem. It broke something. Probably something important.");
             }
             else if (errCode < 4) {
-              System.out.println("Error: You broke it.");
+              System.out.println(" CATS: \'Someone set us up the error.\'");
+            }
+            else if (errCode < 5) {
+              System.out.println(" Critical Error.");
             }
             else if (errCode < 6) {
-              System.out.println("There was a problem. It broke something. Probably something important.");
+              System.out.println(" Sorry, Virtual machine broke.");
+            }
+            else if (errCode < 7) {
+              System.out.println(" I'm sorry Dave, I'm afraid I can't do that.");
             }
             else if (errCode < 8) {
-              System.out.println("CATS: \'Someone set us up the error.\'");
+              System.out.println(" That doesn't look right. Try again.");
             }
+            else if (errCode < 9) {
+              System.out.println(" I am no longer functioning within normal parameters.");
+            }
+
             else {
-              System.out.println("Error for the error gods!");
+              System.out.println(" Error for the error gods!");
             }
             }
           }
