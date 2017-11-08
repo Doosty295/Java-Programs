@@ -1,7 +1,7 @@
 /*
 Java Program (H/C)W 4
 Programming With Java Period 3
-CS0007 - Deciscion Structures
+toUpperCase and Do-While
 Written in Atom 1.22.0 x64
 Compiled in NetBeans IDE 8.2
 Written By Dustin LeGars
