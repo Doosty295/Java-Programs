@@ -33,11 +33,13 @@ public class JavaHW4 {
         Scanner keyboard = new Scanner(System.in);
         /*
         //Ask the question
-        System.out.println("Is your name Eric (Y = Yes, N = No)");
-        input = keyboard.nextLine().toUpperCase();            //Gets user input
-        answer = input.charAt(0); //Gets first character of User input
+        while (answer != 'Y' & answer != 'N') {
+          System.out.println("Is your name Eric (Y = Yes, N = No)");
+          input = keyboard.nextLine().toUpperCase();            //Gets user input
+          answer = input.charAt(0); //Gets first character of User input
 
-        System.out.println("The user entered " + answer);
+          System.out.println("The user entered " + answer);
+}
         */
 
 
