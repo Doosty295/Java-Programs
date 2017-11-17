@@ -26,10 +26,10 @@ public class GradedInput {
      */
     public static void main(String[] args) {
       //Scanner
-        Scanner readInput = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         //Declarations
-        boolean repeat = false;
+        int repeat = 0;
 
 
         //Repeater
@@ -48,25 +48,35 @@ public class GradedInput {
 
           //Input request and response
             System.out.println("Please input the value for grade one.");
-            valueA readInput.nextDouble();
+            valueA = input.nextDouble();
+
             System.out.println("Please input the value for grade two.");
-            valueB readInput.nextDouble();
+            valueB = input.nextDouble();
+
             System.out.println("Please input the value for grade three.");
-            valueC readInput.nextDouble();
+            valueC = input.nextDouble();
+
             System.out.println("Please input the value for grade four.");
-            valueD readInput.nextDouble();
+            valueD = input.nextDouble();
+
             System.out.println("Please input the value for grade five.");
-            valueE readInput.nextDouble();
+            valueE = input.nextDouble();
+
             System.out.println("Please input the value for grade six.");
-            valueF readInput.nextDouble();
+            valueF = input.nextDouble();
+
             System.out.println("Please input the value for grade seven.");
-            valueG readInput.nextDouble();
+            valueG = input.nextDouble();
+
             System.out.println("Please input the value for grade eight.");
-            valueH readInput.nextDouble();
+            valueH = input.nextDouble();
+
             System.out.println("Please input the value for grade nine.");
-            valueI readInput.nextDouble();
+            valueI = input.nextDouble();
+
             System.out.println("Please input the value for grade ten.");
-            valueJ readInput.nextDouble();
+            valueJ = input.nextDouble();
+
 
           //Average
             double average = ((valueA + valueB + valueC + valueD + valueE + valueF + valueG + valueH + valueI + valueJ)/10);
@@ -75,9 +85,11 @@ public class GradedInput {
             System.out.println("The average grade for all ten subjects is " + average + ".");
 
           //Repeat query
-            System.out.println("If you would like to enter another ten grades to average, type \"true\". Otherwise, type \"false\".");
-            repeat readInput.nextBoolean();
-        } while (repeat == true);
+          while (repeat != 1 && repeat != 2) {
+            System.out.println("If you would like to enter another ten grades to average, type \"1\". Otherwise, type \"2\".");
+            repeat = input.nextInt();
+          }
+        } while (repeat == 1);
     }
 
 }
