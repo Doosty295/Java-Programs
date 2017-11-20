@@ -13,10 +13,8 @@ Intent:
     While loop number game.
     do While number game
     For loop number field.
-
-
-
 {>===----===<}
+https://github.com/Doosty295/Java-Programs/blob/master/IffyLoopSwitches/src/iffyloopswitches/IffyLoopSwitches.java
 */
 package iffyloopswitches;
 
