@@ -1,5 +1,5 @@
 /*
-Java Program 10
+Java Homework 5
 Programming With Java Period 3
 Written in Atom 1.22.1 x64
 Compiled in NetBeans IDE 8.2
@@ -58,7 +58,7 @@ state = input.nextInt();
             size = 2;
             break;
         }
-        
+
         System.out.println("Size: " + size);
 */
         if (state == 2) {
@@ -96,7 +96,7 @@ state = input.nextInt();
           if (guess == stNum) {
             System.out.println("Bingo!");
           }
-          
+
           }
 
           else if (state == 4) {
@@ -134,7 +134,7 @@ state = input.nextInt();
             }
             System.out.println("Sum of numbers from " + starting + " to " + ending + " is " + sum + ".");
           }
-        
+
 
         System.out.println("to continue, type 1, to end type any other integer.");
         repeatA = input.nextInt();
