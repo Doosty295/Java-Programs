@@ -9,7 +9,7 @@ Written on 12/06/2017 at 10:50
 Intent:
   Back of page for JP11
 {>===----===<}
-<GitHub Link>
+https://github.com/Doosty295/Java-Programs/blob/master/MoreLoops/src/moreloops/MoreLoops.java
 */
 
 package moreloops;
