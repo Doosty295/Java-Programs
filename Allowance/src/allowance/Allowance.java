@@ -12,8 +12,9 @@ Intent:
 <GitHub Link>
 */
 
-import java.util.Scanner;
 package allowance;
+import java.util.Scanner;
+
 /**
  *
  * @author 9djl001
@@ -25,13 +26,18 @@ public class Allowance {
      */
     public static void main(String[] args) {
 
-      Scanner import = new Scanner(System.in);
+      Scanner doot = new Scanner(System.in);
 
-      double sum = 0.0;
+      int sum = 1;
+      int allow = 1;
+        for (int day = 1; day <= 30; day++) {
+          
 
-        for (; ; ) {
+          allow = allow * 2;
+          sum = sum + allow;
 
         }
+        System.out.println("This many cents " + sum);
     }
 
 }
