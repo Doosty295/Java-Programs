@@ -45,25 +45,15 @@ public class JP14PrimeGame {
           }
 
         //Prime?
-          Boolean primeStat(randomFin) {
-            //multiple 2?
-            if (randomFin%2 == 0) return false;
-            //check odds
-            for (; ; ) {
-
-            }
-          };
-
-        //checks whether an int is prime or not.
-boolean isPrime(int n) {
-  //check if n is a multiple of 2
-  if (n%2==0) return false;
-  //if not, then just check the odds
-  for(int i=3;i*i<=n;i+=2) {
-      if(n%i==0)
-          return false;
-  }
-  return true;
+          public boolean isPrime(randomFin) {
+        //even test
+           if(n > 2 && (n & 1) == 0)
+       return false;
+        //odd
+          for(int i = 3; i * i <= randomFin; i += 2)
+            if (randomFin % i == 0) 
+              return false;
+          return true;
 }
 
         //Resources
