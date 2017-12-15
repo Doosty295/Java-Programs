@@ -51,7 +51,7 @@ public class JP14PrimeGame {
        return false;
         //odd
           for(int i = 3; i * i <= randomFin; i += 2)
-            if (randomFin % i == 0) 
+            if (randomFin % i == 0)
               return false;
           return true;
 }
